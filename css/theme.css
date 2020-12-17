@@ -78,9 +78,11 @@ body {
 
 .top-bar {
 	width: 100%;
+	height: 45px;
+	display: flex;
+	justify-content: center;
 	background-color:#F58634;
 	padding-top: 0;
-	height: 45px;
 }
 
 .top-bar-itens {
@@ -93,10 +95,20 @@ body {
 	padding-left: 15px;
 	color: #fff;
 	font-size: 13px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
 }
 
 .top-bar-itens img {
 	padding-right: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .slide_noticias {
@@ -132,15 +144,28 @@ body {
 }
 
 /**** PAGE CONTAINERS ****/
-.rodape1 p{
+.footer-home {
 	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+.rodape1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 48px;
 	background-color:#F58634;
-	padding-top: 15px;
-	padding-bottom: 15px;
 	color:#fff;
 }
 
 .rodape2 {
+	width: 100%;
+	height: 48px;
 	background-color:#1C1E4E;
 	color: #fff;
 }
@@ -1877,6 +1902,9 @@ h3.follow { width:90%!important; line-height:35px!important; }
 }
 
 /* flickr */
+@media  (max-width:1024px){
+.hidden-info { display: none; }
+}
 @media (min-width: 480px) and (max-width:979px){
 .FlickrImagesBlog li { width:20%; }
 }
